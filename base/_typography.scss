@@ -3,3 +3,47 @@
 
 //open sans
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+
+
+header{
+    h1{
+        font-size:2em;
+        font-family:'Raleway';
+    }
+    p{
+        font-family:'Open sans';
+        font-size:1em;
+    }
+}
+main{
+    h2{
+        font-family:'Raleway';
+        font-size:1.5em;
+    }
+    p{
+        font-family:'Open sans';
+        font-size:1.1em;
+    }
+    h1{
+        font-family:'Raleway';
+        font-family:2em;
+    }
+    span:nth-of-type(1) {
+        font-weight:bold;
+        font-family:'Raleway';
+    }
+    span:nth-of-type(2){
+        font-family:'Open sans';
+        font-size: 0.9em;
+    }
+    h3{
+        font-family:'Raleway';
+        font-size:1.5em;
+    }
+}
+footer{
+    font-family:'Open sans';
+    a{
+        color:white;
+    }
+}

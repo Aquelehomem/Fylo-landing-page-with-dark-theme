@@ -20,8 +20,57 @@ html, body {
   width: 100%;
   height: 0; }
 
+header h1 {
+  font-size: 2em;
+  font-family: 'Raleway'; }
+header p {
+  font-family: 'Open sans';
+  font-size: 1em; }
+
+main h2 {
+  font-family: 'Raleway';
+  font-size: 1.5em; }
+main p {
+  font-family: 'Open sans';
+  font-size: 1.1em; }
+main h1 {
+  font-family: 'Raleway';
+  font-family: 2em; }
+main span:nth-of-type(1) {
+  font-weight: bold;
+  font-family: 'Raleway'; }
+main span:nth-of-type(2) {
+  font-family: 'Open sans';
+  font-size: 0.9em; }
+main h3 {
+  font-family: 'Raleway';
+  font-size: 1.5em; }
+
+footer {
+  font-family: 'Open sans'; }
+  footer a {
+    color: white; }
+
 /*weights: 400,700*/
 /*weights: 400,700*/
+header button {
+  background-color: #339ecc;
+  color: white;
+  border-radius: 40px; }
+
+main button:nth-of-type(1) {
+  border-bottom: solid #65e2d9;
+  border-width: 2px;
+  color: #65e2d9; }
+main .div2 input {
+  height: 3em;
+  border-radius: 30px; }
+main .div2 button:nth-of-type(1) {
+  background-color: #339ecc;
+  height: 3em;
+  border-radius: 30px;
+  border: none; }
+
 header {
   background-color: #1c2431;
   color: white; }
@@ -92,82 +141,264 @@ header {
       height: 3em; }
 
 main {
-  padding: 20% 5%;
+  padding: 20% 5% 180px 5%;
   color: white;
   background-color: #181f2a; }
   @media screen and (min-width: 1000px) {
     main {
-      padding: 5% 5%; } }
-  @media screen and (min-width: 803px) {
-    main div:nth-of-type(1) section:nth-of-type(1) {
-      display: flex;
-      flex-wrap: wrap; } }
-  main div:nth-of-type(1) section:nth-of-type(1) div {
-    text-align: center;
-    line-height: 1.6;
-    margin: 0 auto 5em auto;
-    max-width: 300px; }
+      padding: 5% 40px 180px 40px;
+      height: 1900px; } }
+  main div:nth-of-type(1) {
+    position: relative; }
     @media screen and (min-width: 803px) {
-      main div:nth-of-type(1) section:nth-of-type(1) div {
-        margin: 0 auto 2.5em auto;
+      main div:nth-of-type(1) section:nth-of-type(1) {
         display: flex;
-        justify-content: space-between;
-        width: 90%;
-        max-width: none; }
-        main div:nth-of-type(1) section:nth-of-type(1) div div:nth-of-type(1) {
-          display: block;
-          margin-right: auto;
-          width: 30%; }
-        main div:nth-of-type(1) section:nth-of-type(1) div div:nth-of-type(2) {
-          display: block;
-          margin-left: auto;
-          width: 30%; } }
-    main div:nth-of-type(1) section:nth-of-type(1) div img {
-      width: 40%;
-      max-width: 80px; }
+        flex-wrap: wrap; } }
+    main div:nth-of-type(1) section:nth-of-type(1) div {
+      text-align: center;
+      line-height: 1.6;
+      margin: 0 auto 5em auto;
+      max-width: 300px; }
       @media screen and (min-width: 803px) {
-        main div:nth-of-type(1) section:nth-of-type(1) div img {
-          margin: 0 0 1em 0; } }
-    @media screen and (min-width: 803px) {
-      main div:nth-of-type(1) section:nth-of-type(1) div h2 {
-        margin: 0 0 0.3em 0; } }
-  main div:nth-of-type(1) section:nth-of-type(2) {
-    text-align: left;
-    line-height: 1.7; }
-    @media screen and (min-width: 1000px) {
-      main div:nth-of-type(1) section:nth-of-type(2) {
-        display: flex;
-        justify-content: space-between; } }
-    main div:nth-of-type(1) section:nth-of-type(2) img {
-      width: 90%;
-      max-width: 550px;
-      margin: 0 auto 4em auto;
-      display: block; }
-      @media screen and (min-width: 1000px) {
-        main div:nth-of-type(1) section:nth-of-type(2) img {
-          margin: 0 auto 0 0;
-          max-width: 48%; } }
-    @media screen and (min-width: 1000px) {
-      main div:nth-of-type(1) section:nth-of-type(2) div:nth-of-type(1) {
-        width: 48%;
-        padding: 100px 0 0 0; } }
-    main div:nth-of-type(1) section:nth-of-type(2) h1 {
-      margin: 0 0 0.8em 0;
-      max-width: 400px; }
-      @media screen and (min-width: 1000px) {
-        main div:nth-of-type(1) section:nth-of-type(2) h1 {
+        main div:nth-of-type(1) section:nth-of-type(1) div {
+          margin: 0 auto 2.5em auto;
+          display: flex;
+          justify-content: space-between;
+          width: 90%;
+          max-width: none; }
+          main div:nth-of-type(1) section:nth-of-type(1) div div:nth-of-type(1) {
+            display: block;
+            margin-right: auto;
+            width: 30%; }
+          main div:nth-of-type(1) section:nth-of-type(1) div div:nth-of-type(2) {
+            display: block;
+            margin-left: auto;
+            width: 30%; } }
+      main div:nth-of-type(1) section:nth-of-type(1) div img {
+        width: 40%;
+        max-width: 80px; }
+        @media screen and (min-width: 803px) {
+          main div:nth-of-type(1) section:nth-of-type(1) div img {
+            margin: 0 0 1em 0; } }
+      @media screen and (min-width: 803px) {
+        main div:nth-of-type(1) section:nth-of-type(1) div h2 {
           margin: 0 0 0.3em 0; } }
-    main div:nth-of-type(1) section:nth-of-type(2) button {
-      margin: 1em 0 0 0;
+    main div:nth-of-type(1) section:nth-of-type(2) {
+      text-align: left;
+      line-height: 1.7; }
+      @media screen and (min-width: 1000px) {
+        main div:nth-of-type(1) section:nth-of-type(2) {
+          display: flex;
+          justify-content: space-between; } }
+      main div:nth-of-type(1) section:nth-of-type(2) img {
+        width: 90%;
+        max-width: 550px;
+        margin: 0 auto 4em auto;
+        display: block; }
+        @media screen and (min-width: 1000px) {
+          main div:nth-of-type(1) section:nth-of-type(2) img {
+            margin: 0 auto 0 0;
+            max-width: 48%; } }
+      @media screen and (min-width: 1000px) {
+        main div:nth-of-type(1) section:nth-of-type(2) div:nth-of-type(1) {
+          width: 48%;
+          padding: 100px 0 0 0; } }
+      main div:nth-of-type(1) section:nth-of-type(2) h1 {
+        margin: 0 0 0.8em 0;
+        max-width: 400px; }
+        @media screen and (min-width: 1000px) {
+          main div:nth-of-type(1) section:nth-of-type(2) h1 {
+            margin: 0 0 0.3em 0; } }
+      main div:nth-of-type(1) section:nth-of-type(2) button {
+        margin: 1em 0 0 0;
+        display: flex;
+        flex-wrap: wrap;
+        width: 220px;
+        text-align: left;
+        height: 1.5em;
+        background-color: transparent; }
+        main div:nth-of-type(1) section:nth-of-type(2) button img {
+          width: 20px;
+          align-self: center;
+          margin: 0 0 0 8px; }
+    main div:nth-of-type(1) section:nth-of-type(3) {
+      padding: 25% 5%;
+      line-height: 1.8;
+      position: relative;
+      z-index: 3; }
+      @media screen and (min-width: 1000px) {
+        main div:nth-of-type(1) section:nth-of-type(3) {
+          display: flex;
+          justify-content: space-between;
+          flex-wrap: wrap;
+          line-height: 1.2; } }
+      main div:nth-of-type(1) section:nth-of-type(3) .div {
+        text-align: none;
+        background: none;
+        height: 20px;
+        margin: 0 auto;
+        padding: 0;
+        width: 100%; }
+        @media screen and (min-width: 1000px) {
+          main div:nth-of-type(1) section:nth-of-type(3) .div {
+            margin: 0 auto 15px auto; } }
+        main div:nth-of-type(1) section:nth-of-type(3) .div img {
+          width: 30px; }
+          @media screen and (min-width: 1000px) {
+            main div:nth-of-type(1) section:nth-of-type(3) .div img {
+              width: 50px; } }
+      main div:nth-of-type(1) section:nth-of-type(3) div {
+        padding: 10% 5%;
+        margin: 0 auto 2.5em auto;
+        border-radius: 8px;
+        background-color: #202a3c;
+        max-width: 457px;
+        position: relative; }
+        @media screen and (min-width: 1000px) {
+          main div:nth-of-type(1) section:nth-of-type(3) div {
+            padding: 3% 3%;
+            width: 275px;
+            max-width: none;
+            margin: 0 0 1em 0; } }
+        main div:nth-of-type(1) section:nth-of-type(3) div p {
+          margin: 0 0 30px 0; }
+        main div:nth-of-type(1) section:nth-of-type(3) div .profile {
+          width: 50px;
+          border-radius: 50%;
+          float: left;
+          margin: 0 10px 0 0; }
+          @media screen and (min-width: 1000px) {
+            main div:nth-of-type(1) section:nth-of-type(3) div .profile {
+              width: 40px; } }
+        main div:nth-of-type(1) section:nth-of-type(3) div span {
+          display: block; }
+    main div:nth-of-type(1) .div2 {
+      background: #1c2431;
+      box-shadow: 1px 1px 8px 3px #0b1523;
+      color: white;
+      text-align: center;
+      margin: 0 auto;
+      padding: 8% 5%;
+      line-height: 1.5;
+      position: absolute;
+      border-radius: 10px;
+      width: 90%;
+      max-width: 700px;
+      left: 0;
+      right: 0; }
+      @media screen and (min-width: 1000px) {
+        main div:nth-of-type(1) .div2 {
+          padding: 50px 100px;
+          top: 1920px; } }
+      main div:nth-of-type(1) .div2 h3 {
+        margin: 0 0 1.0em 0;
+        display: block; }
+      main div:nth-of-type(1) .div2 p {
+        margin: 0 0 1.2em 0;
+        display: block; }
+        @media screen and (min-width: 1000px) {
+          main div:nth-of-type(1) .div2 p {
+            margin: 0 0 2em 0; } }
+      main div:nth-of-type(1) .div2 input {
+        width: 90%;
+        margin: 0 0 1.2em 0; }
+        @media screen and (min-width: 1000px) {
+          main div:nth-of-type(1) .div2 input {
+            display: block;
+            width: 65%;
+            text-align: left;
+            margin: 0 auto 0 0;
+            float: left; } }
+      main div:nth-of-type(1) .div2 button {
+        width: 90%; }
+        @media screen and (min-width: 1000px) {
+          main div:nth-of-type(1) .div2 button {
+            display: block;
+            width: 30%;
+            margin: 0 0 0 auto; } }
+
+footer {
+  color: white;
+  background-color: #0b1523;
+  padding: 240px 5% 10% 5%; }
+  @media screen and (min-width: 1000px) {
+    footer {
+      padding: 190px 5% 7% 5%; } }
+  @media screen and (min-width: 1000px) {
+    footer .wrapper > .flex {
       display: flex;
       flex-wrap: wrap;
-      width: 210px;
-      text-align: left;
-      height: 1.5em;
-      background-color: transparent; }
-      main div:nth-of-type(1) section:nth-of-type(2) button img {
-        width: 20px;
-        align-self: center;
-        margin: 0 0 0 8px; }
+      justify-content: space-between;
+      margin: 2em 0 0 0; } }
+  footer .wrapper > .flex div:nth-of-type(1) {
+    display: grid;
+    grid-template-columns: 30px 2fr;
+    grid-template-rows: repeat(5, 2em);
+    grid-column-gap: 5px;
+    margin: 2em 0 4em 0; }
+    @media screen and (min-width: 1000px) {
+      footer .wrapper > .flex div:nth-of-type(1) {
+        margin: 0;
+        grid-template-columns: 30px 3.3fr 30px 1fr;
+        max-width: 55%; } }
+    footer .wrapper > .flex div:nth-of-type(1) img:nth-of-type(1), footer .wrapper > .flex div:nth-of-type(1) span:nth-of-type(1) {
+      grid-row: 1/2;
+      max-width: 380px; }
+    footer .wrapper > .flex div:nth-of-type(1) img:nth-of-type(2), footer .wrapper > .flex div:nth-of-type(1) span:nth-of-type(2) {
+      grid-row: 4; }
+      @media screen and (min-width: 1000px) {
+        footer .wrapper > .flex div:nth-of-type(1) img:nth-of-type(2), footer .wrapper > .flex div:nth-of-type(1) span:nth-of-type(2) {
+          grid-column: 3;
+          grid-row: 1; } }
+    @media screen and (min-width: 1000px) {
+      footer .wrapper > .flex div:nth-of-type(1) span:nth-of-type(2) {
+        grid-column: 4; } }
+    footer .wrapper > .flex div:nth-of-type(1) img:nth-of-type(3), footer .wrapper > .flex div:nth-of-type(1) span:nth-of-type(3) {
+      grid-row: 5; }
+      @media screen and (min-width: 1000px) {
+        footer .wrapper > .flex div:nth-of-type(1) img:nth-of-type(3), footer .wrapper > .flex div:nth-of-type(1) span:nth-of-type(3) {
+          grid-column: 3;
+          grid-row: 2; } }
+    @media screen and (min-width: 1000px) {
+      footer .wrapper > .flex div:nth-of-type(1) span:nth-of-type(3) {
+        grid-column: 4; } }
+  footer .wrapper > .flex div:nth-of-type(2) {
+    margin: 0 0 3em 0; }
+    @media screen and (min-width: 1000px) {
+      footer .wrapper > .flex div:nth-of-type(2) {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 20%;
+        margin: 0 auto 0 80px; } }
+    footer .wrapper > .flex div:nth-of-type(2) ul {
+      margin: 0 0 2em 0;
+      display: block; }
+      footer .wrapper > .flex div:nth-of-type(2) ul li {
+        margin: 0 0 0.5em 0; }
+        @media screen and (min-width: 1000px) {
+          footer .wrapper > .flex div:nth-of-type(2) ul li {
+            margin: 0 0 1em 0; } }
+      footer .wrapper > .flex div:nth-of-type(2) ul ul:nth-of-type(1) {
+        margin: 0 0 0 auto; }
+  footer .wrapper > .flex div:nth-of-type(3) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 15px;
+    width: 150px;
+    margin: 0 auto; }
+    @media screen and (min-width: 1000px) {
+      footer .wrapper > .flex div:nth-of-type(3) {
+        margin: 0 0 0 auto;
+        max-width: 120px; } }
+    footer .wrapper > .flex div:nth-of-type(3) img {
+      border: solid black;
+      border-width: 1px;
+      padding: 3px;
+      border-radius: 50%;
+      filter: invert(100%); }
+      @media screen and (min-width: 1000px) {
+        footer .wrapper > .flex div:nth-of-type(3) img {
+          width: 25px; } }
 
 /*# sourceMappingURL=main.css.map */

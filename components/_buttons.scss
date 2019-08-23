@@ -1,0 +1,26 @@
+header{
+    button{
+        background-color:$blue;
+        color:white;
+        border-radius:40px;
+    }
+}
+main{
+    button:nth-of-type(1) {
+        border-bottom: solid $cyan;
+        border-width:2px;
+        color:$cyan;
+    }
+    .div2 {
+        input{
+            height:3em;
+            border-radius:30px;
+        }
+        button:nth-of-type(1) {
+        background-color:$blue;
+        height:3em;
+        border-radius:30px;
+        border:none;
+    }
+}
+}
